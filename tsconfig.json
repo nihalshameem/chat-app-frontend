@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types", "src/types"],  // Add src/types if custom types are there
+    "types": ["node","react", "react-dom", "web-vitals"],  // This is fine as you are including web-vitals
+    "jsx": "react-jsx"
+  },
+  "include": ["src/components", "src/custom.d.ts", "src/types"]
+}

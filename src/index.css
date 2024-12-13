@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.sidemenu-menus-block {
+  max-height: 500px;
+  overflow: scroll;
+  scrollbar-width: none;
+  border-radius: 10px;
+}
+
+.sidemenu-menus-block::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-box {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.chat-box .single-msg {
+  display: flex;
+  padding: 10px 0;
+}
+
+.chat-box .single-msg.sent {
+  justify-content: flex-end;
+}
+
+.chat-box .single-msg.received {
+  justify-content: flex-start;
+}
+
+.chat-box .single-msg .ant-space {
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.chat-box .single-msg.sent .ant-space {
+  background-color: #e6f7ff;
+}
+
+.chat-box .single-msg.received .ant-space {
+  background-color: #f0f0f0;
+}
+
+.chat-box .ant-list {
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px
+}
+
+/* Webkit scrollbar styles */
+.chat-box .ant-list::-webkit-scrollbar {
+  width: 6px;
+  /* Slim scrollbar */
+}
+
+/* Track (the area the scrollbar moves along) */
+.chat-box .ant-list::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Dark background for track */
+}
+
+/* Handle (the part the user drags) */
+.chat-box .ant-list::-webkit-scrollbar-thumb {
+  background-color: #555;
+  /* Darker thumb */
+  border-radius: 10px;
+  /* Rounded thumb */
+}
+
+/* Handle on hover */
+.chat-box .ant-list::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  /* Lighter color when hovering */
+}
+
+.chat-box .ant-list-split .ant-list-item {
+  border-block-end: transparent;
+}
+
+.chat-box .send-btn-block {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  margin-top: 10px;
+}
