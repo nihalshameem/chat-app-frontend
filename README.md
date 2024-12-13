@@ -22,7 +22,7 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chat-app-frontend.git
+git clone https://github.com/nihalshameem/chat-app-frontend.git
 cd chat-app-frontend
 ```
 
